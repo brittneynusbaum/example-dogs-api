@@ -9,7 +9,7 @@ content-type: application/json
   "password_confirmation": "password"
 }
 
-### user log in
+### sessions log in
 POST http://localhost:3000/sessions.json
 content-type: application/json
 
