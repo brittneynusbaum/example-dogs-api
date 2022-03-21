@@ -1,0 +1,30 @@
+### user sign up
+POST http://localhost:3000/users.json
+content-type: application/json
+
+{
+  "name": "Sam",
+  "email": "sam@theonering.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### user log in
+POST http://localhost:3000/sessions.json
+content-type: application/json
+
+{
+  "email": "sam@theonering.com",
+  "password": "password"
+}
+
+### create new dog
+POST http://localhost:3000/dogs.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDc5Nzk2OTJ9.yHS-UU5mCLNP0QCzy_1Gt2tS89kX-nRFbzl8zffvk5c
+content-type: application/json
+
+{
+  "name": "Annie",
+  "age": 10,
+  "breed": "Corgie"
+}
