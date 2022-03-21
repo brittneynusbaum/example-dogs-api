@@ -1,11 +1,11 @@
 class DogsController < ApplicationController
-  belongs_to :user
 
   def create
+    pp current_user
     dog = Dog.new(
       name: params[:name],
       age: params[:age],
-      breed: params[:breed]
+      breed: params[:breed],
       user_id: current_user
     )
     dog.save
